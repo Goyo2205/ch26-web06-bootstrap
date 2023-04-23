@@ -26,5 +26,5 @@ function disableButton(){
     console.log("disableButton function")
     this.disabled = true;
     
-    document.getElementById("mensaje").textContent = "bienvenido " + prompt("Hola") + ", es un placer"
+    document.getElementById("mensaje").textContent = "bienvenido " + prompt("Ingrese su nombre") + ", es un placer"
 }
