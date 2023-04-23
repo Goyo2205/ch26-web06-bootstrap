@@ -70,7 +70,7 @@
                 Proyectos
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Dime tu nombre</a></li>
+                <li><a class="dropdown-item" href="./assets/htmls/mi-nombre.html">Dime tu nombre</a></li>
                 <li>
                   <a class="dropdown-item disabled" href="#">Calculadora</a>
                 </li>
@@ -222,14 +222,14 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                        <div class="features-icons-icon d-flex"><i class="bi-layers m-auto text-primary"></i></div>
+                        <div class="features-icons-icon d-flex"><i id="icono1" class="bi-layers m-auto text-primary"></i></div>
                         <h3>Bootstrap 5 Ready</h3>
                         <p class="lead mb-0">Featuring the latest build of the new Bootstrap 5 framework!</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-                        <div class="features-icons-icon d-flex"><i class="bi-terminal m-auto text-primary"></i></div>
+                        <div class="features-icons-icon d-flex"><i id="icono1" class="bi-terminal m-auto text-primary"></i></div>
                         <h3>Easy to Use</h3>
                         <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
                     </div>
@@ -241,21 +241,35 @@
 
 
     <!--acceso a dom-->
-    <div class="container">
+    <div class="container mt-5">
       <div class="row justify-content-center">
         <div class="col-5 text-center">
-          <p id="name">mi nombre</p>
-          <p onclick="changeColorRed()">Cambia el color</p>
+          <h3 id="name" class="text-color">mi nombre</h3>
         </div>
       </div>
       <!--Cambia el color -->
-      <div class="row">
-        <div class="col"><button onclick="changeColorRed()" type="button" class="btn btn-danger">Danger</button>
-        </div>
-        <div class="col"></div>
-        <div class="col"></div>
+      <div class="row justify-content-center mt-4">
+        <div class="col"><button onclick="changeColor('red')" type="button" class="btn btn-danger">Red</button></div>
+        <div class="col"><button onclick="changeColor('blue')" type="button" class="btn btn-primary">Blue</button></div>
+        <div class="col"><button onclick="changeColor('green')" type="button" class="btn btn-success">Green</button></div>
       </div>
     </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col"><p class="text-color" onclick="changeColorParagraph('green',this)" >Ma cmabiare a Verde</p></div>
+        <div class="col"><p class="text-color" onclick="changeColorParagraph('blue',this)" >Ma cmabiare a Azul</p></div>
+        <div class="col"><p class="text-color" onclick="changeColorParagraph('yellow',this)" >Ma cmabiare a Amarillo</p></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col justify-content-center"><button onclick="resetColor('black')" type="button" class="btn btn-dark">Reset</button></div></div>
+      </div>
+    </div>
+
+    
 
     <!--mi script-->
     <script>
