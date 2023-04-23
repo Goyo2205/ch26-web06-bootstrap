@@ -22,3 +22,9 @@ function resetColor(color){
     }
     
 }
+function disableButton(){
+    console.log("disableButton function")
+    this.disabled = true;
+    
+    document.getElementById("mensaje").textContent = "bienvenido " + prompt("Hola") + ", es un placer"
+}

@@ -60,7 +60,7 @@
                   Proyectos
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="./assets/htmls/mi-nombre.html">Dime tu nombre</a></li>
+                  <li><a class="dropdown-item" href="#">Dime tu nombre</a></li>
                   <li>
                     <a class="dropdown-item disabled" href="#">Calculadora</a>
                   </li>
@@ -83,9 +83,24 @@
           </div>
         </div>
     </nav>
-    <h1>Hola</h1>
+    <!--Mensaje de saludo-->
+    <section>
+      <div class="container">
+        <div class="row m-5">
+          <div class="col"><h1 id="mensaje" class="text-center">Bienvenido 😃,<br> por favor indicame tu nombre para recibir un trato mas personalizado.</h1></div>
+        </div>
+      </div>
+      <div class="container justify-content-center">
+        <div class="row">
+          <div class="col"><button id="agreeButton" type="button" class="btn btn-success" onclick="disableButton()">Agree</button></div>
+        </div>
+      </div>
+    </section>
+    
     
 
+    <!-- scriot externo -->
+    <script src="../js/main.js"></script>
 
     <!--script bootstrap-->
     <script
